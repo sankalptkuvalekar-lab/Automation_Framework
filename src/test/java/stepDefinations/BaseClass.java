@@ -114,6 +114,8 @@ import java.util.Properties;
 public class BaseClass {
 
     // ---------- STATIC DRIVER AND PAGE OBJECTS ----------
+
+    //declating the variables
     public static WebDriver driver;
 
     public static Logger logger;

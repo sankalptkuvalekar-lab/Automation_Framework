@@ -66,13 +66,14 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = {".//Features"},
-        glue = {"stepDefinations", "hooks"},
+        features = {".//Features/NewRegistration.feature"},
+        glue = {"", "hooks"},
         monochrome = true,
         plugin = {
                 "pretty",
                 //"html:Report/cucumber-reports/cucumber.html"
-        }
+        }//,tags="@Regression"
+
 )
 public class TestRun extends AbstractTestNGCucumberTests {
 

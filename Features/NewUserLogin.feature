@@ -6,7 +6,7 @@ Feature: User Login
     Then Verify that home page is visible successfully
     And User Click on the Login link
     Then Verify Login to your account is visible
-    And User enter his Email and password
+    When User enter his Email and password
     And User Click on Login button
     Then Verify that home page is visible successfully
     And Close Browser

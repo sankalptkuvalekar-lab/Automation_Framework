@@ -16,4 +16,11 @@ public class TestCasePageSteps extends BaseClass{
         testCasePage.verifyTestCasesPageIsVisible();
     }
 
+    @Then ("Click on Test case Button")
+    public void click_on_testcase(){
+
+            testCasePage.clickTestCases();
+        handleAd();
+    }
+
 }

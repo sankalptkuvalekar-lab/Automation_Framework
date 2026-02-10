@@ -14,6 +14,8 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
+import static stepDefinations.BaseClass.logger;
+
 public class AddToCart {
     public WebDriver driver;
 
@@ -63,6 +65,24 @@ public class AddToCart {
 
     @FindBy(xpath = "//a[contains(text(),'Cart')]")
      WebElement btnCart;
+
+    @FindBy(xpath = "//a[@class='cart_quantity_delete']")
+    WebElement deleteProductBtn;
+
+    // Locator for the empty cart message or the table
+    @FindBy(xpath = "//span[@id='empty_cart']//b[text()='Cart is empty!']")
+    WebElement emptyCartMessage;
+
+    @FindBy(xpath = "//a[@class='cart_quantity_delete']")
+    List<WebElement> allDeleteButtons;
+
+     int initialCount;
+
+    @FindBy(xpath = "//td[@class='cart_description']//a")
+    WebElement productNameInCart;
+
+    @FindBy(xpath = "//td[@class='cart_quantity']/button")
+    WebElement cartQuantityDisplay;
 
 
 
@@ -138,6 +158,85 @@ public class AddToCart {
         // JS Click handles situations where a Google Ad might be overlaying the header
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", btnCart);
+    }
+
+    public void removeProductFromCart() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.elementToBeClickable(deleteProductBtn));
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", deleteProductBtn);
+
+            logger.info("Clicked on remove button for product.");
+        } catch (Exception e) {
+            logger.error("Could not remove product: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    public boolean isCartEmpty() {
+        // Wait a moment for the item to disappear from the DOM
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        return wait.until(ExpectedConditions.invisibilityOf(deleteProductBtn));
+    }
+
+    public boolean isCartEmptyMessageDisplayed() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            // Wait for the message to appear after deletion
+            return wait.until(ExpectedConditions.visibilityOf(emptyCartMessage)).isDisplayed();
+        } catch (Exception e) {
+            logger.error("Empty cart message did not appear.");
+            return false;
+        }
+    }
+
+    public void storeInitialCount() {
+        initialCount = allDeleteButtons.size();
+        logger.info("Initial items in cart: " + initialCount);
+    }
+
+    public void removeFirstProduct() {
+        if (!allDeleteButtons.isEmpty()) {
+            // Use JS Click to ensure the click happens regardless of overlays
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", allDeleteButtons.get(0));
+        }
+    }
+
+    public boolean isItemCountDecreased() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        // Wait until the number of delete buttons is less than what we started with
+        return wait.until(d -> allDeleteButtons.size() < initialCount);
+    }
+
+    public String getQuantityForProduct(String expectedProductName) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        // This XPath finds the row containing your product name, then finds the quantity button in that row
+        String quantityXpath = "//a[text()='" + expectedProductName + "']/ancestor::tr//td[@class='cart_quantity']/button";
+
+        try {
+            WebElement qtyElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(quantityXpath)));
+            String actualQty = qtyElement.getText();
+            logger.info("Found product '" + expectedProductName + "' with quantity: " + actualQty);
+            return actualQty;
+        } catch (Exception e) {
+            logger.error("Product '" + expectedProductName + "' not found in cart.");
+            return "0";
+        }
+    }
+
+    public String getCartQuantity() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            // Ensuring the element is visible after the page/AJAX load
+            wait.until(ExpectedConditions.visibilityOf(cartQuantityDisplay));
+            return cartQuantityDisplay.getText();
+        } catch (Exception e) {
+            logger.error("Quantity display not found in cart: " + e.getMessage());
+            return "0";
+        }
     }
 
 

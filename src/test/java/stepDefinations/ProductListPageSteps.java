@@ -8,7 +8,8 @@ public class ProductListPageSteps extends BaseClass{
 
     @Then("Click on Products button")
     public void click_on_products_button() {
-        productListAndPage.clickProducts();
+       // productListAndPage.clickProducts();
+        productListAndPage.clickOnProductsButton();
         //productListAndPage.dismissAdIfPresent();
         handleAd();
 
@@ -57,6 +58,7 @@ public class ProductListPageSteps extends BaseClass{
 
     @Then("Enter product name in search input and click search button")
     public void enter_product_name_in_search_input_and_click_search_button() {
+        productListAndPage.clickOnProductsButton();
         logger.info("********** Starting Product Search **********");
 
         // 1. Force a check for the ad

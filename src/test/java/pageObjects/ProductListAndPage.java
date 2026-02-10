@@ -113,11 +113,15 @@ public class ProductListAndPage extends BaseClass {
     @FindBy(xpath = "//h2[@class='title text-center' and text()='All Products']")
      WebElement allProductsTitle;
 
+    @FindBy(xpath = "//a[@href='/products']")
+    WebElement productsBtn;
+
 
 
 
     public void clickProducts() {
         productsLink.click();
+        handleAd();
        /* clickWithJS(productsLink);
 
         // Check if ad appeared
@@ -130,6 +134,22 @@ public class ProductListAndPage extends BaseClass {
             ((JavascriptExecutor) ldriver).executeScript("const elements = document.getElementsByClassName('adsbygoogle'); while (elements.length > 0) elements[0].remove();");
         }*/
 
+    }
+
+    public void clickOnProductsButton() {
+        try {
+            // 1. Standard click
+            productsBtn.click();
+            logger.info("Clicked on Products button.");
+        } catch (Exception e) {
+            // 2. Fallback: JS Click if intercepted
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", productsBtn);
+            logger.info("JS Click used for Products button.");
+        }
+
+        // 3. THE CRITICAL FIX: Handle the Vignette Ad
+        handleAd();
     }
     public String getAllProductsHeaderText() {
         // Returns the text "All Products" for the assertion
@@ -278,27 +298,38 @@ public class ProductListAndPage extends BaseClass {
     }
 
     public void clickBrandByName(String brandName) {
-        // 1. Find the brand link
-        String xpath = "//div[@class='brands-name']//a[contains(text(),'" + brandName + "')]";
-        WebElement brandLink = driver.findElement(By.xpath(xpath));
+        // 1. Create a Wait object (10 seconds)
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        // 2. Use JS Click (it's more effective against ad overlays)
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", brandLink);
+        // 2. Broader XPath: Looks for ANY link containing the brand name and the brand URL path
+        // The '.' handles the <span> tag inside the <a> tag.
+        String xpath = "//a[contains(@href, '/brand_products/') and contains(., '" + brandName + "')]";
 
-        // 3. THE FIX: Check if we are stuck on the Ad URL
+        try {
+            logger.info("Waiting for Brand: " + brandName);
+
+            // 3. Wait until the element is actually present in the DOM
+            WebElement brandLink = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+
+            // 4. Scroll it into view (crucial for sidebars)
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", brandLink);
+
+            // 5. Use JS Click to bypass overlays
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", brandLink);
+
+            logger.info("Successfully clicked " + brandName);
+
+        } catch (Exception e) {
+            logger.error("Could not find brand " + brandName + " after waiting 10 seconds.");
+            // Take a screenshot here if you have a screenshot method
+            throw e;
+        }
+
+        // 6. Handle the Ad redirect
         if (driver.getCurrentUrl().contains("#google_vignette")) {
-            System.out.println("AD DETECTED: Refreshing to bypass...");
             driver.navigate().refresh();
-
-            // Sometimes after refresh, we need to click it again if the refresh
-            // sent us back to the previous page
-            if (!driver.getCurrentUrl().contains("brand_products")) {
-                js.executeScript("arguments[0].click();", brandLink);
-            }
         }
     }
-
     public void searchProduct(String productName) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 

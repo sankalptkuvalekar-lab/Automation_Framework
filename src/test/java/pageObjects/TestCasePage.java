@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import stepDefinations.BaseClass;
 
 import java.time.Duration;
 
@@ -29,7 +30,8 @@ public class TestCasePage {
     @CacheLookup
     WebElement testCasesLink;
 
-    @FindBy(xpath = "//h2[@class='title text-center']//b[normalize-space()='Test Cases']")
+   // @FindBy(xpath = "//h2[@class='title text-center']//b[normalize-space()='Test Cases']")
+   @FindBy(xpath = "//b[contains(translate(text(), 'TESTCASES', 'testcases'), 'test cases')]")
     @CacheLookup
     WebElement testCasesHeader;
 
@@ -38,6 +40,7 @@ public class TestCasePage {
     public void clickTestCases() {
         // Verifying visibility before interaction
         testCasesLink.click();
+
         // Check if ad appeared
        /* if (ldriver.getCurrentUrl().contains("#google_vignette")) {
             // Instead of refreshing, try to click the body to dismiss
@@ -60,4 +63,6 @@ public class TestCasePage {
         String actualText = testCasesHeader.getText();
         Assert.assertEquals(actualText, "TEST CASES", "User is NOT on the Test Cases page!");
     }
+
+
 }
