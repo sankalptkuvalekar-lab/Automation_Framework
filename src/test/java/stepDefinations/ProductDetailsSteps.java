@@ -1,6 +1,7 @@
 package stepDefinations;
 
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.testng.Assert;
 import pageObjects.PaymentPage;
 import pageObjects.ProductDetailsPage;
@@ -51,5 +52,12 @@ public class ProductDetailsSteps extends BaseClass{
         logger.info("Actual: " + actualMessage);
 
         Assert.assertEquals(actualMessage, expectedMessage, "The success message text does not match!");
+    }
+
+    //quantity
+    @When("User increases quantity to {string}")
+    public void user_increases_quantity_to(String qty) {
+        // productDetailPage is your Page Object instance
+       productDetailsPage.setQuantity(qty);
     }
 }

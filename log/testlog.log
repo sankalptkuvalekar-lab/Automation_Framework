@@ -3038,3 +3038,1073 @@
 2026-02-01 16:42:06,300 - AutomationExercise -INFO - ********** Opening URL **********
 2026-02-01 16:55:19,564 - AutomationExercise -INFO - ********** Browser Already Launched **********
 2026-02-01 16:55:19,568 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:15:19,630 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:15:19,632 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:15:28,785 - AutomationExercise -INFO - ********** Verifying Review Section Visibility **********
+2026-02-02 10:15:28,827 - AutomationExercise -INFO - Successfully verified 'Write Your Review' section.
+2026-02-02 10:15:28,828 - AutomationExercise -INFO - ********** Filling out the Product Review form **********
+2026-02-02 10:15:29,122 - AutomationExercise -INFO - ********** Clicked Review Submit Button **********
+2026-02-02 10:15:29,123 - AutomationExercise -INFO - ********** Verifying Review Success Message **********
+2026-02-02 10:15:29,168 - AutomationExercise -INFO - Expected: Thank you for your review.
+2026-02-02 10:15:29,168 - AutomationExercise -INFO - Actual: Thank you for your review.
+2026-02-02 10:15:30,845 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:15:30,846 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:15:45,883 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:15:45,883 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:15:50,170 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-02 10:15:55,222 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-02 10:15:58,686 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-02 10:16:00,660 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:16:00,660 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:16:05,018 - AutomationExercise -INFO - ********** Verifying Sidebar Categories **********
+2026-02-02 10:16:05,046 - AutomationExercise -INFO - Category sidebar is successfully verified.
+2026-02-02 10:16:05,050 - AutomationExercise -INFO - ********** Clicking Women Category **********
+2026-02-02 10:16:05,115 - AutomationExercise -INFO - ********** Navigating to Women > Dress Category **********
+2026-02-02 10:16:07,235 - AutomationExercise -INFO - ********** Verifying Category Page Header **********
+2026-02-02 10:16:07,260 - AutomationExercise -INFO - Expected: WOMEN - DRESS PRODUCTS
+2026-02-02 10:16:07,260 - AutomationExercise -INFO - Actual: WOMEN - DRESS PRODUCTS
+2026-02-02 10:16:07,263 - AutomationExercise -INFO - ********** Navigating to Men > Tshirts Category **********
+2026-02-02 10:16:09,468 - AutomationExercise -INFO - ********** Verifying Category Page Navigation **********
+2026-02-02 10:16:09,489 - AutomationExercise -INFO - Successfully navigated to category page: MEN - TSHIRTS PRODUCTS
+2026-02-02 10:16:10,876 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:16:10,876 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:16:20,457 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:16:20,458 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:16:30,258 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:16:30,271 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-02 10:16:31,493 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-02 10:16:31,530 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-02 10:16:33,357 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-02 10:16:33,376 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-02 10:16:33,394 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-02 10:16:33,782 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-02 10:16:35,326 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-02 10:16:35,353 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-02 10:16:37,254 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-02 10:16:38,370 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:16:39,753 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-02 10:16:39,802 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-02 10:16:39,803 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-02 10:16:40,729 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-02 10:16:40,911 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-02 10:16:43,533 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-02 10:16:43,555 - AutomationExercise -INFO - Order successfully verified!
+2026-02-02 10:16:43,558 - AutomationExercise -INFO - ********** Downloading and Verifying Invoice **********
+2026-02-02 10:16:46,975 - AutomationExercise -INFO - Invoice downloaded successfully: /Users/sankalp/Downloads/invoice.txt
+2026-02-02 10:16:47,031 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-02 10:16:48,680 - AutomationExercise -INFO - Successfully clicked Continue and cleared potential ads.
+2026-02-02 10:16:48,681 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-02 10:16:49,561 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-02 10:16:52,357 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:16:52,357 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:16:59,192 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 10:17:00,708 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:17:00,708 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:17:12,839 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:17:13,744 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-02 10:17:15,742 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:17:15,742 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:17:26,839 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:17:26,839 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:17:35,758 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 10:17:37,344 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:17:37,344 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:17:42,730 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-02 10:17:42,767 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-02 10:17:44,456 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-02 10:17:44,477 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-02 10:17:44,502 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-02 10:17:44,886 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-02 10:17:46,555 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-02 10:17:46,575 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-02 10:17:48,667 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-02 10:17:49,779 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-02 10:17:52,279 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:17:52,279 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:17:55,368 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-02 10:18:10,859 - AutomationExercise -WARN - Search bar not visible. Retrying ad handling...
+2026-02-02 10:18:33,752 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:18:33,753 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:18:44,242 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:18:44,242 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:18:54,174 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:18:54,175 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:19:07,523 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:19:07,524 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:19:11,230 - AutomationExercise -INFO - ********** Verifying Recommended Items Section **********
+2026-02-02 10:19:11,275 - AutomationExercise -INFO - ********** Adding Recommended Product to Cart **********
+2026-02-02 10:19:19,688 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:19:19,689 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:19:25,820 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-02 10:19:26,867 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-02 10:19:27,368 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-02 10:19:27,396 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-02 10:19:27,428 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-02 10:19:27,810 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-02 10:19:29,412 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-02 10:19:29,436 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-02 10:19:37,527 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:19:38,450 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-02 10:19:38,488 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-02 10:19:38,488 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-02 10:19:39,579 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-02 10:19:39,795 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-02 10:19:42,511 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-02 10:19:42,528 - AutomationExercise -INFO - Order successfully verified!
+2026-02-02 10:19:42,530 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-02 10:19:43,486 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-02 10:19:46,360 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:19:46,360 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:19:57,049 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:19:57,060 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-02 10:19:58,518 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-02 10:19:58,556 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-02 10:20:00,545 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-02 10:20:00,564 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-02 10:20:00,584 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-02 10:20:01,056 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-02 10:20:02,868 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-02 10:20:02,887 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-02 10:20:05,020 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-02 10:20:06,317 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:20:07,584 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-02 10:20:07,618 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-02 10:20:07,618 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-02 10:20:08,848 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-02 10:20:09,072 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-02 10:20:11,810 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-02 10:20:11,828 - AutomationExercise -INFO - Order successfully verified!
+2026-02-02 10:20:11,830 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-02 10:20:12,643 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-02 10:20:15,538 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:20:15,538 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:20:19,479 - AutomationExercise -INFO - ********** Clicking the Scroll-Up Arrow **********
+2026-02-02 10:20:19,509 - AutomationExercise -INFO - ********** Verifying Scroll Up and Header Visibility **********
+2026-02-02 10:20:19,528 - AutomationExercise -INFO - Scroll up verified: Header text is visible.
+2026-02-02 10:20:21,057 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:20:21,057 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:20:24,514 - AutomationExercise -INFO - ********** Scrolling back to the top of the page **********
+2026-02-02 10:20:24,521 - AutomationExercise -INFO - ********** Verifying Scroll Up and Header Visibility **********
+2026-02-02 10:20:24,551 - AutomationExercise -INFO - Scroll up verified: Header text is visible.
+2026-02-02 10:20:25,889 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:20:25,889 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:20:30,342 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-02 10:20:34,323 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:20:34,323 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:20:39,922 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:20:39,922 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:21:00,439 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:21:00,440 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:21:06,209 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-02 10:21:06,258 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-02 10:21:07,866 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-02 10:21:07,886 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-02 10:21:07,908 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-02 10:21:08,308 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-02 10:21:11,034 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-02 10:21:11,053 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-02 10:21:17,149 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:21:18,167 - AutomationExercise -INFO - Comparing Final Cleaned Actual: [Los Angeles California 90001] with Cleaned Expected: [Los Angeles California 90001]
+2026-02-02 10:21:18,168 - AutomationExercise -INFO - ********** Verifying Billing Address **********
+2026-02-02 10:21:18,190 - AutomationExercise -INFO - Comparing Actual: [Los Angeles California 90001] with Expected: [Los Angeles California 90001]
+2026-02-02 10:21:18,190 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-02 10:21:19,010 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-02 10:28:24,213 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:28:24,216 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:28:31,824 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 10:29:33,608 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:29:33,612 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:30:55,534 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-02 10:31:00,600 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-02 10:31:04,763 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-02 10:38:13,835 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:38:13,838 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:38:21,543 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-02 10:38:26,606 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-02 10:38:31,498 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-02 10:42:20,001 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:42:20,004 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:42:27,542 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-02 10:42:32,602 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-02 10:42:37,241 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-02 10:43:08,182 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:43:08,184 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:43:15,776 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-02 10:43:20,835 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-02 10:43:25,513 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-02 10:45:11,132 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:45:11,135 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:45:18,685 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-02 10:45:23,744 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-02 10:45:28,498 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-02 10:46:29,436 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:46:29,439 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:46:36,301 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-02 10:46:41,365 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-02 10:46:46,229 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-02 10:47:15,321 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:47:15,325 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:47:30,803 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-02 10:49:18,851 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:49:18,853 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:50:04,045 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:50:04,048 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:50:56,425 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:50:56,429 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:51:11,183 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:51:12,632 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-02 10:52:32,491 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:52:32,494 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:57:17,890 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:57:17,892 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:57:39,091 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:57:39,094 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:58:24,884 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:58:24,888 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:59:14,186 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 10:59:14,190 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 10:59:28,361 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 10:59:30,053 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-02 11:00:09,155 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:00:09,158 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:00:28,389 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:00:28,391 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:00:51,020 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:00:51,024 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:01:13,517 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:01:13,521 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:01:31,076 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:01:31,079 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:01:54,260 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:01:54,262 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:02:18,522 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:02:18,525 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:02:48,465 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:02:48,469 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:03:14,742 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:03:14,745 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:03:29,662 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 11:03:31,228 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-02 11:06:14,093 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:06:14,096 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:06:29,319 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 11:06:30,632 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-02 11:06:30,674 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-02 11:06:30,674 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-02 11:06:32,161 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-02 11:06:32,352 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-02 11:06:34,377 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-02 11:06:34,396 - AutomationExercise -INFO - Order successfully verified!
+2026-02-02 11:06:34,399 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-02 11:06:35,475 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-02 11:07:26,630 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:07:26,633 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:07:58,548 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:07:58,557 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:08:32,713 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:08:32,716 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:09:05,692 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:09:05,695 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:09:40,001 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:09:40,004 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:09:47,297 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 11:10:37,187 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:10:37,190 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:16:17,950 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:16:17,953 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:19:36,537 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:19:36,539 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:20:24,049 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:20:24,052 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:21:01,088 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:21:01,090 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:21:32,215 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:21:32,219 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:22:15,264 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:22:15,266 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:26:06,884 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:26:06,887 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:28:06,099 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:28:06,102 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:29:38,435 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:29:38,440 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:30:13,800 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:30:13,804 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:30:37,251 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:30:37,254 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:32:15,583 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:32:15,586 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:36:43,264 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:36:43,267 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:50:29,068 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:50:29,071 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:51:04,616 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:51:04,621 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 11:52:04,116 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 11:52:04,119 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 12:00:46,316 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 12:00:46,320 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 12:02:45,198 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 12:02:45,201 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 12:08:24,580 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 12:08:24,586 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 12:08:24,991 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 12:08:24,994 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 12:09:29,156 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 12:09:29,159 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 12:09:49,172 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 12:09:49,174 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 12:41:38,672 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 12:41:38,677 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:33:25,662 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:33:25,666 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:33:44,112 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:33:44,114 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:34:47,849 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:34:47,852 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:38:19,240 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:38:19,246 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:39:28,772 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:39:28,775 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:39:59,098 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:39:59,102 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:40:46,944 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:40:46,948 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:40:53,676 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 13:41:05,289 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:41:05,293 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:41:15,064 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 13:41:28,240 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:41:28,245 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:41:37,935 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 13:41:52,020 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:41:52,024 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:42:02,077 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 13:42:14,689 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:42:14,692 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:42:22,508 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-02 13:42:37,164 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:42:37,167 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:42:52,184 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-02 13:42:53,565 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-02 13:42:53,605 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-02 13:42:53,606 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-02 13:42:54,688 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-02 13:42:54,918 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-02 13:42:57,572 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-02 13:42:57,593 - AutomationExercise -INFO - Order successfully verified!
+2026-02-02 13:42:57,596 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-02 13:42:58,551 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-02 13:43:09,660 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:43:09,663 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:44:47,544 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:44:47,547 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:46:11,530 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:46:11,536 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:49:35,211 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:49:35,213 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:50:43,421 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:50:43,423 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:53:05,130 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:53:05,133 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:53:29,365 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:53:29,368 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:58:07,896 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:58:07,898 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:58:43,257 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:58:43,262 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:59:10,266 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:59:10,270 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 13:59:38,669 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 13:59:38,671 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:40:40,232 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:40:40,233 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:41:23,968 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:41:23,970 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:41:41,497 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:41:41,499 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:42:28,425 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:42:28,427 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:42:57,354 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:42:57,357 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:44:17,991 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:44:17,992 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:44:58,942 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:44:58,945 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:45:38,273 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:45:38,274 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:45:49,483 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:45:49,487 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:46:36,040 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:46:36,042 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:51:04,307 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:51:04,308 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:53:31,783 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:53:31,786 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:53:57,638 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-02 14:53:57,640 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-02 14:54:05,897 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-04 14:08:10,625 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:08:10,629 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:08:19,262 - AutomationExercise -INFO - ********** Verifying Review Section Visibility **********
+2026-02-04 14:08:19,301 - AutomationExercise -INFO - Successfully verified 'Write Your Review' section.
+2026-02-04 14:08:19,301 - AutomationExercise -INFO - ********** Filling out the Product Review form **********
+2026-02-04 14:08:19,631 - AutomationExercise -INFO - ********** Clicked Review Submit Button **********
+2026-02-04 14:08:19,632 - AutomationExercise -INFO - ********** Verifying Review Success Message **********
+2026-02-04 14:08:19,667 - AutomationExercise -INFO - Expected: Thank you for your review.
+2026-02-04 14:08:19,667 - AutomationExercise -INFO - Actual: Thank you for your review.
+2026-02-04 14:08:21,381 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:08:21,382 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:08:53,172 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:08:53,182 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:09:02,254 - AutomationExercise -INFO - ********** Verifying Review Section Visibility **********
+2026-02-04 14:09:02,309 - AutomationExercise -INFO - Successfully verified 'Write Your Review' section.
+2026-02-04 14:09:02,310 - AutomationExercise -INFO - ********** Filling out the Product Review form **********
+2026-02-04 14:09:02,588 - AutomationExercise -INFO - ********** Clicked Review Submit Button **********
+2026-02-04 14:09:02,589 - AutomationExercise -INFO - ********** Verifying Review Success Message **********
+2026-02-04 14:09:02,622 - AutomationExercise -INFO - Expected: Thank you for your review.
+2026-02-04 14:09:02,622 - AutomationExercise -INFO - Actual: Thank you for your review.
+2026-02-04 14:09:04,367 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:09:04,367 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:10:34,378 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:10:34,379 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:10:42,321 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-04 14:10:47,394 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-04 14:10:52,312 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-04 14:10:52,313 - AutomationExercise -INFO - Waiting for Brand: Polo
+2026-02-04 14:10:53,640 - AutomationExercise -INFO - Successfully clicked Polo
+2026-02-04 14:10:53,648 - AutomationExercise -INFO - ********** Verifying Brand Page Display **********
+2026-02-04 14:10:53,684 - AutomationExercise -INFO - Confirmed Brand Page Header: BRAND - POLO PRODUCTS
+2026-02-04 14:10:53,686 - AutomationExercise -INFO - ********** Clicking on a different brand link **********
+2026-02-04 14:10:56,570 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:10:56,570 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:10:57,905 - AutomationExercise -INFO - ********** Verifying Sidebar Categories **********
+2026-02-04 14:10:57,959 - AutomationExercise -INFO - Category sidebar is successfully verified.
+2026-02-04 14:10:57,964 - AutomationExercise -INFO - ********** Clicking Women Category **********
+2026-02-04 14:10:58,046 - AutomationExercise -INFO - ********** Navigating to Women > Dress Category **********
+2026-02-04 14:11:01,372 - AutomationExercise -INFO - ********** Verifying Category Page Header **********
+2026-02-04 14:11:01,397 - AutomationExercise -INFO - Expected: WOMEN - DRESS PRODUCTS
+2026-02-04 14:11:01,397 - AutomationExercise -INFO - Actual: WOMEN - DRESS PRODUCTS
+2026-02-04 14:11:01,400 - AutomationExercise -INFO - ********** Navigating to Men > Tshirts Category **********
+2026-02-04 14:11:04,089 - AutomationExercise -INFO - ********** Verifying Category Page Navigation **********
+2026-02-04 14:11:04,121 - AutomationExercise -INFO - Successfully navigated to category page: MEN - TSHIRTS PRODUCTS
+2026-02-04 14:11:05,602 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:11:05,602 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:11:13,217 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:11:13,218 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:11:21,531 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-04 14:11:21,544 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-04 14:11:22,667 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-04 14:11:22,715 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-04 14:11:24,153 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-04 14:11:24,178 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-04 14:11:24,201 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-04 14:11:24,921 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-04 14:11:26,801 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-04 14:11:26,848 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-04 14:11:29,004 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-04 14:11:29,864 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-04 14:11:30,789 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-04 14:11:30,822 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-04 14:11:30,823 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-04 14:11:31,815 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-04 14:11:32,072 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-04 14:11:34,940 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-04 14:11:34,961 - AutomationExercise -INFO - Order successfully verified!
+2026-02-04 14:11:34,964 - AutomationExercise -INFO - ********** Downloading and Verifying Invoice **********
+2026-02-04 14:11:38,317 - AutomationExercise -INFO - Invoice downloaded successfully: /Users/sankalp/Downloads/invoice.txt
+2026-02-04 14:11:38,371 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-04 14:11:40,008 - AutomationExercise -INFO - Successfully clicked Continue and cleared potential ads.
+2026-02-04 14:11:40,008 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-04 14:11:40,938 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-04 14:11:43,487 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:11:43,487 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:11:50,891 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-04 14:11:52,216 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:11:52,216 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:12:03,893 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:12:03,893 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:12:16,363 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:12:16,364 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:12:25,370 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-04 14:12:26,784 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:12:26,784 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:12:32,416 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-04 14:12:33,462 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-04 14:12:33,946 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-04 14:12:33,966 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-04 14:12:33,992 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-04 14:12:34,457 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-04 14:12:40,835 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-04 14:12:43,974 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-04 14:12:45,703 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-04 14:12:47,499 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-04 14:12:50,927 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:12:50,928 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:12:56,858 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-04 14:13:15,254 - AutomationExercise -WARN - Search bar not visible. Retrying ad handling...
+2026-02-04 14:13:39,962 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:13:39,963 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:13:49,978 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-04 14:13:51,401 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:13:51,401 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:15:15,445 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:15:15,445 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:15:28,631 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:15:28,631 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:15:31,298 - AutomationExercise -INFO - ********** Verifying Recommended Items Section **********
+2026-02-04 14:15:31,334 - AutomationExercise -INFO - ********** Adding Recommended Product to Cart **********
+2026-02-04 14:15:40,981 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:15:40,982 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:15:46,792 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-04 14:15:46,828 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-04 14:15:49,099 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-04 14:15:49,118 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-04 14:15:49,136 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-04 14:15:49,530 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-04 14:15:50,997 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-04 14:15:51,017 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-04 14:15:58,779 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-04 14:16:00,540 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-04 14:16:00,578 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-04 14:16:00,579 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-04 14:16:01,658 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-04 14:16:01,885 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-04 14:16:04,878 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-04 14:16:04,904 - AutomationExercise -INFO - Order successfully verified!
+2026-02-04 14:16:04,907 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-04 14:16:06,828 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-04 14:16:09,993 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:16:09,994 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:16:18,431 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-04 14:16:18,454 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-04 14:16:19,991 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-04 14:16:20,038 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-04 14:16:22,796 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-04 14:16:22,816 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-04 14:16:22,837 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-04 14:16:23,239 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-04 14:16:26,284 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-04 14:16:26,306 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-04 14:16:27,874 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-04 14:16:29,601 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-04 14:16:30,618 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-04 14:16:30,653 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-04 14:16:30,653 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-04 14:16:31,784 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-04 14:16:32,011 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-04 14:16:35,362 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-04 14:16:35,382 - AutomationExercise -INFO - Order successfully verified!
+2026-02-04 14:16:35,385 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-04 14:16:36,462 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-04 14:16:39,758 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:16:39,758 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:16:43,080 - AutomationExercise -INFO - ********** Clicking the Scroll-Up Arrow **********
+2026-02-04 14:16:43,111 - AutomationExercise -INFO - ********** Verifying Scroll Up and Header Visibility **********
+2026-02-04 14:16:43,130 - AutomationExercise -INFO - Scroll up verified: Header text is visible.
+2026-02-04 14:16:44,479 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:16:44,479 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:16:47,617 - AutomationExercise -INFO - ********** Scrolling back to the top of the page **********
+2026-02-04 14:16:47,622 - AutomationExercise -INFO - ********** Verifying Scroll Up and Header Visibility **********
+2026-02-04 14:16:47,640 - AutomationExercise -INFO - Scroll up verified: Header text is visible.
+2026-02-04 14:16:49,040 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:16:49,041 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:16:52,624 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-04 14:16:55,913 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:16:55,914 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:18:15,543 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:18:15,544 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:18:25,210 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:18:25,211 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:18:30,987 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-04 14:18:32,178 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-04 14:18:32,751 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-04 14:18:32,773 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-04 14:18:32,797 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-04 14:18:33,212 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-04 14:18:36,095 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-04 14:18:36,122 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-04 14:18:41,727 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-04 14:18:43,390 - AutomationExercise -INFO - Comparing Final Cleaned Actual: [Los Angeles California 90001] with Cleaned Expected: [Los Angeles California 90001]
+2026-02-04 14:18:43,391 - AutomationExercise -INFO - ********** Verifying Billing Address **********
+2026-02-04 14:18:43,420 - AutomationExercise -INFO - Comparing Actual: [Los Angeles California 90001] with Expected: [Los Angeles California 90001]
+2026-02-04 14:18:43,421 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-04 14:18:45,142 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-04 14:21:24,937 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:21:24,942 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:21:52,099 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 14:21:52,102 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 14:22:07,883 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-04 14:22:10,376 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-04 14:22:10,611 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-04 14:22:10,615 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-04 14:22:12,046 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-04 14:22:12,249 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-04 14:22:14,833 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-04 14:22:14,855 - AutomationExercise -INFO - Order successfully verified!
+2026-02-04 14:22:14,858 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-04 14:22:16,487 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-04 15:16:10,081 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 15:16:10,084 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 15:16:36,373 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 15:16:36,376 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 15:18:24,909 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-04 15:18:24,913 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-04 15:18:38,928 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-04 15:18:40,650 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-04 15:18:40,696 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-04 15:18:40,697 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-04 15:18:42,626 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-04 15:18:42,865 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-04 15:18:45,117 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-04 15:18:45,137 - AutomationExercise -INFO - Order successfully verified!
+2026-02-04 15:18:45,139 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-04 15:18:46,525 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-06 13:11:41,180 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-06 13:11:41,184 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-06 13:12:27,471 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-06 13:12:27,474 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-06 13:12:44,563 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-06 13:12:44,566 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-06 13:12:48,654 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-06 13:12:48,700 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-06 13:12:50,693 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-06 13:12:50,710 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-06 13:12:50,726 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-06 13:12:51,028 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-06 13:12:54,088 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-06 13:12:54,109 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-06 13:12:56,321 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-06 13:12:58,407 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-06 13:35:16,488 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-06 13:35:16,491 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-06 13:35:38,547 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-06 13:35:38,549 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-06 13:35:43,403 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-06 13:35:43,440 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-06 13:35:46,199 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-06 13:35:46,216 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-06 13:35:46,230 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-06 13:35:46,576 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-06 13:35:49,359 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-06 13:35:49,383 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-06 13:35:51,100 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-06 13:35:52,697 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-09 12:22:26,119 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-09 12:22:26,123 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-09 12:22:46,027 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-09 12:22:46,031 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-09 12:22:52,266 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-09 12:22:52,346 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-09 12:22:54,190 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-09 12:22:54,215 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-09 12:22:54,241 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-09 12:22:54,773 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-09 12:22:57,129 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-09 12:22:57,154 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-09 12:22:58,534 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-09 12:22:59,538 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-09 12:25:28,157 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-09 12:25:28,162 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-09 12:26:14,453 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-09 12:26:14,456 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-09 12:27:00,970 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-09 12:27:00,975 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-09 12:27:09,127 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-10 10:16:56,958 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 10:16:56,960 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 10:17:40,083 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 10:17:40,085 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 10:17:48,174 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 10:17:48,185 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-10 10:17:49,386 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 10:17:49,414 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 10:17:51,781 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 10:17:51,793 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 10:17:51,805 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 10:17:52,037 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 10:17:53,388 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 10:17:53,408 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 10:17:55,493 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-10 10:17:56,819 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 10:17:58,244 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-10 10:17:58,276 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-10 10:17:58,277 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-10 10:17:59,238 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-10 10:17:59,388 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-10 10:18:01,524 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-10 10:18:01,541 - AutomationExercise -INFO - Order successfully verified!
+2026-02-10 10:18:01,543 - AutomationExercise -INFO - ********** Downloading and Verifying Invoice **********
+2026-02-10 10:18:04,971 - AutomationExercise -INFO - Invoice downloaded successfully: /Users/sankalp/Downloads/invoice.txt
+2026-02-10 10:18:05,024 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 10:18:07,839 - AutomationExercise -INFO - Successfully clicked Continue and cleared potential ads.
+2026-02-10 10:18:07,840 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-10 10:18:09,326 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-10 10:33:56,007 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 10:33:56,010 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 10:34:30,978 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 10:34:30,980 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 10:34:44,616 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-10 14:15:05,874 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:15:05,878 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:16:04,948 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:16:04,963 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:16:57,003 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:16:57,009 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:17:01,443 - AutomationExercise -INFO - Entered subscription email: test@example.com
+2026-02-10 14:17:01,482 - AutomationExercise -INFO - Clicked on the subscribe button.
+2026-02-10 14:17:01,523 - AutomationExercise -INFO - Subscription message displayed: You have been successfully subscribed!
+2026-02-10 14:17:12,212 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:17:12,233 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:17:16,867 - AutomationExercise -INFO - Entered subscription email: test@example.com
+2026-02-10 14:17:16,921 - AutomationExercise -INFO - Clicked on the subscribe button.
+2026-02-10 14:17:16,992 - AutomationExercise -INFO - Subscription message displayed: You have been successfully subscribed!
+2026-02-10 14:24:50,463 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:24:50,466 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:24:54,702 - AutomationExercise -INFO - Entered subscription email: test@example.com
+2026-02-10 14:24:54,755 - AutomationExercise -INFO - Clicked on the subscribe button.
+2026-02-10 14:24:54,783 - AutomationExercise -INFO - Subscription message displayed: You have been successfully subscribed!
+2026-02-10 14:25:09,323 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:25:09,337 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:25:10,438 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:25:10,441 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:25:12,988 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-10 14:25:13,514 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-10 14:25:15,493 - AutomationExercise -INFO - Entered subscription email: test@example.com
+2026-02-10 14:25:15,528 - AutomationExercise -INFO - Clicked on the subscribe button.
+2026-02-10 14:25:15,566 - AutomationExercise -INFO - Subscription message displayed: You have been successfully subscribed!
+2026-02-10 14:25:16,315 - AutomationExercise -INFO - Entered subscription email: test@example.com
+2026-02-10 14:25:16,413 - AutomationExercise -INFO - Clicked on the subscribe button.
+2026-02-10 14:25:16,471 - AutomationExercise -INFO - Subscription message displayed: You have been successfully subscribed!
+2026-02-10 14:40:21,582 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:40:21,587 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:41:14,508 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:41:14,515 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:41:24,870 - AutomationExercise -INFO - Clicked on remove button for product.
+2026-02-10 14:42:06,334 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:42:06,338 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:42:16,672 - AutomationExercise -INFO - Clicked on remove button for product.
+2026-02-10 14:43:01,285 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:43:01,288 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:43:12,138 - AutomationExercise -INFO - Clicked on remove button for product.
+2026-02-10 14:43:25,407 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:43:25,410 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:43:36,247 - AutomationExercise -INFO - Clicked on remove button for product.
+2026-02-10 14:43:53,896 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:43:53,898 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:44:05,669 - AutomationExercise -INFO - Clicked on remove button for product.
+2026-02-10 14:44:33,428 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:44:33,431 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:44:44,021 - AutomationExercise -INFO - Clicked on remove button for product.
+2026-02-10 14:45:38,348 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:45:38,352 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:45:48,367 - AutomationExercise -INFO - Clicked on remove button for product.
+2026-02-10 14:48:19,093 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:48:19,096 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:48:29,699 - AutomationExercise -INFO - Clicked on remove button for product.
+2026-02-10 14:48:40,065 - AutomationExercise -ERROR - Empty cart message did not appear.
+2026-02-10 14:52:07,384 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:52:07,388 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:52:18,168 - AutomationExercise -INFO - Initial items in cart: 2
+2026-02-10 14:52:36,253 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:52:36,257 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:52:44,883 - AutomationExercise -INFO - Initial items in cart: 2
+2026-02-10 14:55:15,691 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 14:55:15,694 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 14:55:23,199 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 14:55:42,234 - AutomationExercise -WARN - Search bar not visible. Retrying ad handling...
+2026-02-10 15:06:36,502 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:06:36,506 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:06:49,051 - AutomationExercise -INFO - Increased quantity to: 4
+2026-02-10 15:10:50,904 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:10:50,909 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:11:03,815 - AutomationExercise -INFO - Increased quantity to: 4
+2026-02-10 15:11:05,919 - AutomationExercise -INFO - Verifying quantity. Expected: 4 | Actual: 4
+2026-02-10 15:15:02,775 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:15:02,778 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:15:10,532 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 15:15:29,785 - AutomationExercise -WARN - Search bar not visible. Retrying ad handling...
+2026-02-10 15:16:06,008 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:16:06,011 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:16:08,458 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 15:16:28,627 - AutomationExercise -WARN - Search bar not visible. Retrying ad handling...
+2026-02-10 15:20:23,151 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:20:23,162 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:20:34,474 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 15:20:53,383 - AutomationExercise -WARN - Search bar not visible. Retrying ad handling...
+2026-02-10 15:23:23,609 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:23:23,613 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:23:48,044 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:23:48,047 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:24:33,425 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:24:33,429 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:24:37,856 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:24:44,839 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 15:25:12,784 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:25:12,787 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:25:16,931 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:25:24,206 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 15:27:24,254 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:27:24,258 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:27:29,223 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:27:39,014 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:27:39,017 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 15:27:59,618 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:27:59,621 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:28:02,050 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:28:12,927 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:28:12,931 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 15:34:59,997 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:35:00,007 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:35:03,336 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:35:14,458 - AutomationExercise -INFO - ********** Verifying Review Section Visibility **********
+2026-02-10 15:35:14,502 - AutomationExercise -INFO - Successfully verified 'Write Your Review' section.
+2026-02-10 15:35:14,503 - AutomationExercise -INFO - ********** Filling out the Product Review form **********
+2026-02-10 15:35:14,773 - AutomationExercise -INFO - ********** Clicked Review Submit Button **********
+2026-02-10 15:35:14,774 - AutomationExercise -INFO - ********** Verifying Review Success Message **********
+2026-02-10 15:35:14,799 - AutomationExercise -INFO - Expected: Thank you for your review.
+2026-02-10 15:35:14,799 - AutomationExercise -INFO - Actual: Thank you for your review.
+2026-02-10 15:35:21,578 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:35:21,579 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:35:24,391 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:35:47,473 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:35:47,473 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:35:52,576 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:35:59,824 - AutomationExercise -INFO - ********** Verifying Brands Sidebar after navigating to Products **********
+2026-02-10 15:36:04,874 - AutomationExercise -INFO - Brands sidebar is visible.
+2026-02-10 15:36:09,273 - AutomationExercise -INFO - ********** Clicking on Brand: Polo **********
+2026-02-10 15:36:09,274 - AutomationExercise -INFO - Waiting for Brand: Polo
+2026-02-10 15:36:10,176 - AutomationExercise -INFO - Successfully clicked Polo
+2026-02-10 15:36:10,186 - AutomationExercise -INFO - ********** Verifying Brand Page Display **********
+2026-02-10 15:36:10,216 - AutomationExercise -INFO - Confirmed Brand Page Header: BRAND - POLO PRODUCTS
+2026-02-10 15:36:10,218 - AutomationExercise -INFO - ********** Clicking on a different brand link **********
+2026-02-10 15:36:18,296 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:36:18,296 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:36:22,459 - AutomationExercise -INFO - ********** Verifying Sidebar Categories **********
+2026-02-10 15:36:22,486 - AutomationExercise -INFO - Category sidebar is successfully verified.
+2026-02-10 15:36:22,490 - AutomationExercise -INFO - ********** Clicking Women Category **********
+2026-02-10 15:36:22,552 - AutomationExercise -INFO - ********** Navigating to Women > Dress Category **********
+2026-02-10 15:36:24,138 - AutomationExercise -INFO - ********** Verifying Category Page Header **********
+2026-02-10 15:36:24,164 - AutomationExercise -INFO - Expected: WOMEN - DRESS PRODUCTS
+2026-02-10 15:36:24,164 - AutomationExercise -INFO - Actual: WOMEN - DRESS PRODUCTS
+2026-02-10 15:36:24,167 - AutomationExercise -INFO - ********** Navigating to Men > Tshirts Category **********
+2026-02-10 15:36:27,187 - AutomationExercise -INFO - ********** Verifying Category Page Navigation **********
+2026-02-10 15:36:27,215 - AutomationExercise -INFO - Successfully navigated to category page: MEN - TSHIRTS PRODUCTS
+2026-02-10 15:36:33,668 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:36:33,669 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:36:46,747 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:36:46,747 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:36:51,126 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:37:01,856 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 15:37:01,869 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-10 15:37:03,042 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 15:37:04,067 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 15:37:05,148 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 15:37:05,175 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 15:37:05,201 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 15:37:05,718 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 15:37:08,263 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 15:37:08,285 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 15:37:09,301 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-10 15:37:10,274 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 15:37:11,487 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-10 15:37:11,523 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-10 15:37:11,523 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-10 15:37:12,606 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-10 15:37:12,818 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-10 15:37:15,231 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-10 15:37:15,252 - AutomationExercise -INFO - Order successfully verified!
+2026-02-10 15:37:15,255 - AutomationExercise -INFO - ********** Downloading and Verifying Invoice **********
+2026-02-10 15:37:18,696 - AutomationExercise -INFO - Invoice downloaded successfully: /Users/sankalp/Downloads/invoice.txt
+2026-02-10 15:37:18,697 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 15:37:19,797 - AutomationExercise -INFO - Successfully clicked Continue and cleared potential ads.
+2026-02-10 15:37:19,797 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-10 15:37:20,576 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-10 15:37:28,568 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:37:28,568 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:37:36,627 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-10 15:37:43,181 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:37:43,181 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:37:53,058 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:38:01,427 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:38:01,427 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:38:05,737 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:38:22,726 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:38:22,727 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:38:31,899 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-10 15:38:38,071 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:38:38,071 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:40:01,697 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:40:01,698 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:40:06,457 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:40:17,315 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:40:17,317 - AutomationExercise -INFO - ********** Starting Product Search **********
+2026-02-10 15:40:26,292 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:40:26,293 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:40:36,050 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-10 15:40:42,404 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:40:42,404 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:40:54,632 - AutomationExercise -INFO - ********** Closing Browse r**********
+2026-02-10 15:41:01,055 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:41:01,055 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:41:05,583 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:41:24,707 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:41:24,707 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:41:28,493 - AutomationExercise -INFO - ********** Verifying Recommended Items Section **********
+2026-02-10 15:41:28,527 - AutomationExercise -INFO - ********** Adding Recommended Product to Cart **********
+2026-02-10 15:41:42,323 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:41:42,323 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:41:48,466 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 15:41:50,592 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 15:41:51,010 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 15:41:51,029 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 15:41:51,058 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 15:41:51,443 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 15:41:51,482 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 15:42:08,256 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:42:08,257 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:42:10,853 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:42:22,777 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 15:42:22,799 - AutomationExercise -INFO - ********** Clicking Register/Login button **********
+2026-02-10 15:42:25,220 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 15:42:25,256 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 15:42:26,800 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 15:42:26,820 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 15:42:26,839 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 15:42:27,346 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 15:42:29,296 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 15:42:29,316 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 15:42:31,113 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-10 15:42:32,193 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 15:42:33,906 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-10 15:42:33,944 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-10 15:42:33,944 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-10 15:42:34,827 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-10 15:42:35,054 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-10 15:42:37,388 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-10 15:42:37,411 - AutomationExercise -INFO - Order successfully verified!
+2026-02-10 15:42:37,414 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-10 15:42:38,453 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-10 15:42:46,459 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:42:46,460 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:42:49,063 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:42:59,835 - AutomationExercise -INFO - Initial items in cart: 2
+2026-02-10 15:43:06,684 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:43:06,684 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:43:09,497 - AutomationExercise -INFO - ********** Clicking the Scroll-Up Arrow **********
+2026-02-10 15:43:09,524 - AutomationExercise -INFO - ********** Verifying Scroll Up and Header Visibility **********
+2026-02-10 15:43:09,544 - AutomationExercise -INFO - Scroll up verified: Header text is visible.
+2026-02-10 15:43:10,909 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:43:10,909 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:43:15,587 - AutomationExercise -INFO - ********** Scrolling back to the top of the page **********
+2026-02-10 15:43:15,592 - AutomationExercise -INFO - ********** Verifying Scroll Up and Header Visibility **********
+2026-02-10 15:43:15,610 - AutomationExercise -INFO - Scroll up verified: Header text is visible.
+2026-02-10 15:43:21,970 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:43:21,970 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:43:26,399 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-10 15:43:35,008 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:43:35,008 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:43:46,175 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:43:46,176 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:43:57,587 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:43:57,587 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:44:03,998 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 15:44:04,045 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 15:44:06,904 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 15:44:06,924 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 15:44:06,943 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 15:44:07,346 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 15:44:11,026 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 15:44:11,049 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 15:44:13,094 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:44:22,805 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 15:44:24,556 - AutomationExercise -INFO - Comparing Final Cleaned Actual: [Los Angeles California 90001] with Cleaned Expected: [Los Angeles California 90001]
+2026-02-10 15:44:24,556 - AutomationExercise -INFO - ********** Verifying Billing Address **********
+2026-02-10 15:44:24,576 - AutomationExercise -INFO - Comparing Actual: [Los Angeles California 90001] with Expected: [Los Angeles California 90001]
+2026-02-10 15:44:24,576 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-10 15:44:26,109 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-10 15:44:33,860 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:44:33,861 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:45:51,225 - AutomationExercise -INFO - ********** Navigating to Cart Page **********
+2026-02-10 15:45:54,093 - AutomationExercise -INFO - Entered subscription email: test@example.com
+2026-02-10 15:45:54,116 - AutomationExercise -INFO - Clicked on the subscribe button.
+2026-02-10 15:45:54,156 - AutomationExercise -INFO - Subscription message displayed: You have been successfully subscribed!
+2026-02-10 15:46:00,773 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:46:00,774 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:46:03,070 - AutomationExercise -INFO - Entered subscription email: test@example.com
+2026-02-10 15:46:03,092 - AutomationExercise -INFO - Clicked on the subscribe button.
+2026-02-10 15:46:03,132 - AutomationExercise -INFO - Subscription message displayed: You have been successfully subscribed!
+2026-02-10 15:46:04,401 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:46:04,401 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:46:08,440 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:46:21,193 - AutomationExercise -INFO - Increased quantity to: 4
+2026-02-10 15:46:23,888 - AutomationExercise -INFO - Verifying quantity. Expected: 4 | Actual: 4
+2026-02-10 15:48:43,167 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:48:43,170 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:48:49,468 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 15:48:49,508 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 15:48:51,729 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 15:48:51,753 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 15:48:51,775 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 15:48:52,179 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 15:48:52,214 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 15:49:14,643 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:49:14,647 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:49:22,861 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 15:49:22,900 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 15:49:25,805 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 15:49:25,829 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 15:49:25,852 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 15:49:26,286 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 15:49:28,618 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 15:49:28,641 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 15:49:31,266 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-10 15:49:32,201 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-10 15:49:49,759 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:49:49,762 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:50:30,219 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:50:30,221 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:50:37,277 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 15:50:39,654 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 15:50:40,344 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 15:50:40,379 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 15:50:40,412 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 15:50:41,141 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 15:50:43,552 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 15:50:43,714 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 15:50:46,243 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:50:55,816 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 15:50:57,492 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-10 15:50:57,530 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-10 15:50:57,531 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-10 15:50:58,824 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-10 15:50:59,009 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-10 15:51:01,935 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-10 15:51:01,955 - AutomationExercise -INFO - Order successfully verified!
+2026-02-10 15:51:01,957 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-10 15:51:02,865 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-10 15:52:36,770 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:52:36,772 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:52:46,543 - AutomationExercise -INFO - Clicked on Products button.
+2026-02-10 15:52:57,180 - AutomationExercise -INFO - ********** Clicking Proceed To Checkout Button **********
+2026-02-10 15:52:58,098 - AutomationExercise -INFO - ********** Verifying Checkout Information **********
+2026-02-10 15:52:58,142 - AutomationExercise -INFO - Address Details and Review Order are successfully verified.
+2026-02-10 15:52:58,143 - AutomationExercise -INFO - ********** Finalizing Order with Comments **********
+2026-02-10 15:52:59,675 - AutomationExercise -INFO - ********** Entering Payment Information **********
+2026-02-10 15:52:59,872 - AutomationExercise -INFO - ********** Confirming the Order **********
+2026-02-10 15:53:03,021 - AutomationExercise -INFO - ********** Verifying Order Success Message **********
+2026-02-10 15:53:03,041 - AutomationExercise -INFO - Order successfully verified!
+2026-02-10 15:53:03,044 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-10 15:53:03,864 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********
+2026-02-10 15:57:53,950 - AutomationExercise -INFO - ********** Browser Already Launched **********
+2026-02-10 15:57:53,953 - AutomationExercise -INFO - ********** Opening URL **********
+2026-02-10 15:58:00,127 - AutomationExercise -INFO - ********** Entered name and email for registration **********
+2026-02-10 15:58:00,198 - AutomationExercise -INFO - ********** Filling Account Information **********
+2026-02-10 15:58:02,215 - AutomationExercise -INFO - ********** Selecting Newsletter Checkbox **********
+2026-02-10 15:58:02,238 - AutomationExercise -INFO - ********** Selecting Special Offers Checkbox **********
+2026-02-10 15:58:02,261 - AutomationExercise -INFO - ********** Filling Address Information **********
+2026-02-10 15:58:02,700 - AutomationExercise -INFO - ********** Clicking Create Account Button **********
+2026-02-10 15:58:05,300 - AutomationExercise -INFO - ********** Verifying Account Creation Success **********
+2026-02-10 15:58:05,330 - AutomationExercise -INFO - ********** Clicking Continue Button **********
+2026-02-10 15:58:07,772 - AutomationExercise -INFO - ********** Initiating Account Deletion **********
+2026-02-10 15:58:09,373 - AutomationExercise -INFO - ********** Verifying Account Deletion and Closing Session **********

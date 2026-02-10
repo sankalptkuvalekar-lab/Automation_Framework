@@ -47,7 +47,8 @@ public class NewUserLoginPage {
    @CacheLookup
    WebElement loginToAccountIsDisplayed;
 
-    @FindBy(css = "li a i.fa-user + b")
+   // @FindBy(css = "li a i.fa-user + b")
+   @FindBy(xpath = "//a[contains(text(), 'Logged in as')]//b")
     @CacheLookup
     WebElement loggedInAsUser;
 

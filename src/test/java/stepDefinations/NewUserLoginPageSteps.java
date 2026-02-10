@@ -12,7 +12,7 @@ public class NewUserLoginPageSteps extends BaseClass{
     }
     @When("User enter his Email and password")
     public void user_enter_his_email_and_password() {
-        newuserLoginPage.emailEnter("user66@gmail.com");
+        newuserLoginPage.emailEnter("user76@gmail.com");
         newuserLoginPage.passwordEnter("user@123");
     }
     @When("User Click on Login button")

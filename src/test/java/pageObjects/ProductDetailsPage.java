@@ -41,6 +41,11 @@ public class ProductDetailsPage extends BaseClass {
     @FindBy(xpath = "//div[@class='alert-success alert']/span")
     WebElement successAlert;
 
+    //product quantity
+
+    @FindBy(id = "quantity")
+    WebElement quantityInput;
+
 
 
     public boolean isReviewSectionVisible() {
@@ -72,6 +77,21 @@ public class ProductDetailsPage extends BaseClass {
             return wait.until(ExpectedConditions.visibilityOf(successAlert)).getText();
         } catch (Exception e) {
             return "Success message not found";
+        }
+    }
+
+    public void setQuantity(String quantity) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.visibilityOf(quantityInput));
+
+            quantityInput.clear(); // Clear the default "1"
+            quantityInput.sendKeys(quantity);
+
+            logger.info("Increased quantity to: " + quantity);
+        } catch (Exception e) {
+            logger.error("Could not set quantity: " + e.getMessage());
+            throw e;
         }
     }
 

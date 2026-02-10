@@ -13,6 +13,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
+import static stepDefinations.BaseClass.logger;
 
 
 public class HomePage {
@@ -78,6 +79,18 @@ public class HomePage {
 
     @FindBy(xpath = "//a[@href='/products']")
      WebElement btnProducts;
+
+    //subscription
+
+    @FindBy(id = "susbscribe_email")
+    WebElement subscribeEmailInput;
+
+
+    @FindBy(id = "subscribe")
+    WebElement subscribeBtn;
+
+    @FindBy(id = "success-subscribe")
+    WebElement subscriptionSuccessMsg;
 
 
 
@@ -249,6 +262,43 @@ public class HomePage {
         if (driver.getCurrentUrl().contains("google_vignette")) {
             driver.navigate().refresh();
         }
+    }
+
+    //subscription
+    public void enterSubscriptionEmail(String email) {
+        // Optional: Use JS to scroll to the footer where the input resides
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", subscribeEmailInput);
+
+        subscribeEmailInput.clear();
+        subscribeEmailInput.sendKeys(email);
+        logger.info("Entered subscription email: " + email);
+    }
+
+    public void clickSubscribeButton() {
+        try {
+            // Wait for visibility first
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.visibilityOf(subscribeBtn));
+
+            // Using JS Click for stability against ads/intercepted clicks
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", subscribeBtn);
+
+            logger.info("Clicked on the subscribe button.");
+        } catch (Exception e) {
+            logger.error("Failed to click subscribe button: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    public String getSubscriptionSuccessMessage() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        // Wait for the message to be visible before grabbing text
+        wait.until(ExpectedConditions.visibilityOf(subscriptionSuccessMsg));
+
+        String message = subscriptionSuccessMsg.getText();
+        logger.info("Subscription message displayed: " + message);
+        return message;
     }
 
 

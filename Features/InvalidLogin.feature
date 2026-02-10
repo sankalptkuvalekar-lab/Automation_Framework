@@ -1,6 +1,6 @@
 Feature: Login Feature
 
-Scenario Outline: Login user with Incorrect EmaiL and  Passowrd
+Scenario Outline: Login user with Incorrect EmaiL and  Password
 Given User Launch Chrome Browser
 When User open the URL "https://automationexercise.com/"
   Then Verify that home page is visible successfully
