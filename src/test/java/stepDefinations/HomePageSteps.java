@@ -1,7 +1,12 @@
 package stepDefinations;
 
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.time.Duration;
 
 public class HomePageSteps extends BaseClass{
 
@@ -68,10 +73,47 @@ public class HomePageSteps extends BaseClass{
     }
 
     @Then("Click on any category link under 'Women' category, for example: Dress")
-    public void click_on_women_dress_sub_category() {
+    /*public void click_on_women_dress_sub_category() {
         logger.info("********** Navigating to Women > Dress Category **********");
         homePage.clickWomenDressSubCategory();
         handleAd();
+    }*/
+
+    public void click_on_women_dress_sub_category() {
+
+        logger.info("********** Navigating to Women > Dress Category **********");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        // First Attempt
+        homePage.clickWomenDressSubCategory();
+
+        try {
+
+            // If vignette hijacks
+            if (driver.getCurrentUrl().contains("google_vignette")) {
+
+                logger.info("Google Vignette detected. Navigating back and retrying...");
+
+                driver.navigate().back();
+
+                // Small wait for page stability
+                wait.until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//div[@class='panel-group category-products']")));
+
+                // Retry click
+                homePage.clickWomenDressSubCategory();
+            }
+
+            // Now wait for actual category page
+            wait.until(ExpectedConditions.urlContains("/category_products/"));
+
+            logger.info("Successfully navigated to Category page.");
+
+        } catch (Exception e) {
+
+            throw new RuntimeException(" Failed to navigate to Women > Dress category", e);
+        }
     }
 
     @Then("On left side bar, click on any sub-category link of 'Men' category")

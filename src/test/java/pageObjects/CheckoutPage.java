@@ -7,10 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import stepDefinations.BaseClass;
 
 import java.time.Duration;
 
-public class CheckoutPage {
+public class CheckoutPage extends BaseClass {
 
     public WebDriver driver;
 
@@ -71,8 +72,9 @@ public class CheckoutPage {
     public void clickPlaceOrder() {
         // Using JS click because this button is often at the very bottom,
         // frequently obstructed by floating "Join Newsletter" ads or Google Ads.
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", btnPlaceOrder);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", btnPlaceOrder);
+        safeClick(btnPlaceOrder);
     }
 
     public String getDeliveryAddressText() {

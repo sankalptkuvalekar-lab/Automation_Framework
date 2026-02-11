@@ -1,8 +1,15 @@
 package stepDefinations;
 
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageObjects.NewRegisterPage;
+
+import java.time.Duration;
 
 public class NewRegisterPageSteps extends BaseClass{
 
@@ -91,7 +98,7 @@ public class NewRegisterPageSteps extends BaseClass{
         handleAd();
 
     }
-    @Then("Verify that ACCOUNT CREATED is visible")
+    /*@Then("Verify that ACCOUNT CREATED is visible")
     public void verify_that_account_created_is_visible() {
         logger.info("********** Verifying Account Creation Success **********");
 
@@ -100,7 +107,21 @@ public class NewRegisterPageSteps extends BaseClass{
         // If this assertion fails, the @After hook takes over
         Assert.assertTrue(isVisible, "Success message 'ACCOUNT CREATED!' was not visible.");
         handleAd();
+    }*/
+
+    @Then("Verify that ACCOUNT CREATED is visible")
+    public void verify_that_account_created_is_visible() {
+
+        logger.info("********** Verifying Account Creation Success **********");
+
+        // ✅ Handle ads FIRST
+        handleAd();
+
+        boolean isVisible = newRegisterPage.isAccountCreatedVisible();
+
+        Assert.assertTrue(isVisible, "Success message 'ACCOUNT CREATED!' was not visible.");
     }
+
     @Then("Click Continue button")
     public void click_continue_button() {
         logger.info("********** Clicking Continue Button **********");
@@ -115,7 +136,7 @@ public class NewRegisterPageSteps extends BaseClass{
         handleAd();
     }
     @Then("Verify that ACCOUNT DELETED is visible and click Continue button")
-    public void verify_that_account_deleted_is_visible_and_click_button() {
+    /*public void verify_that_account_deleted_is_visible_and_click_button() {
         logger.info("********** Verifying Account Deletion and Closing Session **********");
 
         // 1. Verify Visibility
@@ -125,5 +146,53 @@ public class NewRegisterPageSteps extends BaseClass{
         // 2. Click Continue
         newRegisterPage.clickFinalContinue();
         handleAd();
+    }*/
+
+    public void verify_that_account_deleted_is_visible_and_click_button() {
+        logger.info("********** Verifying Account Deletion and Closing Session **********");
+
+        handleAd(); // ensure no ad is blocking the element
+
+        // Retry mechanism + case-insensitive locator
+        boolean isVisible = false;
+        int attempts = 0;
+        while (attempts < 3) { // try 3 times
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+                // Case-insensitive XPath for web and mobile
+                WebElement deletedMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//*[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'account deleted')]")
+                ));
+
+                if (deletedMsg.isDisplayed()) {
+                    isVisible = true;
+                    logger.info("✅ 'ACCOUNT DELETED!' message is visible");
+                    break;
+                }
+            } catch (Exception e) {
+                logger.warn("Attempt " + (attempts + 1) + ": 'ACCOUNT DELETED!' not visible yet, retrying...");
+                handleAd();
+                sleep(1000); // small wait before retry
+            }
+            attempts++;
+        }
+
+        Assert.assertTrue(isVisible, "Success message 'ACCOUNT DELETED!' was not visible after retries.");
+
+        // Click Continue safely
+        try {
+            newRegisterPage.clickFinalContinue();
+            handleAd();
+        } catch (Exception e) {
+            logger.warn("Click Continue intercepted, using JS fallback");
+            WebElement continueBtn = driver.findElement(By.xpath("//a[contains(text(),'Continue')]"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", continueBtn);
+        }
+    }
+
+    // Helper sleep
+    private void sleep(long millis) {
+        try { Thread.sleep(millis); } catch (InterruptedException e) { /* ignore */ }
     }
 }

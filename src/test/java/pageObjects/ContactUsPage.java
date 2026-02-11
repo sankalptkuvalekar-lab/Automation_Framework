@@ -101,10 +101,10 @@ public void clickContactUs(){
 
 
 
-    public void uploadDocument(String filePath) {
+    /*public void uploadDocument(String filePath) {
         // We use sendKeys to provide the path directly to the input tag
         uploadFileField.sendKeys(filePath);
-    }
+    }*/
       public void clickSubmit() {
          contactSubmitBtn.click();
 

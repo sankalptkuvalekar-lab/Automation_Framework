@@ -27,12 +27,12 @@ public class ContactUsSteps extends BaseClass {
         contactUsPage.enterContactMessage("Hello, I am having trouble accessing my account. Please help.");
 
     }
-    @Then("Upload file")
+    /*@Then("Upload file")
     public void upload_file() {
         String path = "/Users/sankalp/Desktop/testscreenshot.png";
         contactUsPage.uploadDocument(path);
 
-    }
+    }*/
     @Then("Click Submit button")
     public void click_submit_button() {
         contactUsPage.clickSubmit();

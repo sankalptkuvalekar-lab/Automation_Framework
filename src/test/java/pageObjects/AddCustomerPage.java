@@ -6,8 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import stepDefinations.BaseClass;
 
-public class AddCustomerPage {
+public class AddCustomerPage extends BaseClass {
 
     public WebDriver ldriver;
 
@@ -100,8 +101,9 @@ public class AddCustomerPage {
         //listitem.click();
         //Thread.sleep(3000);
 
-        JavascriptExecutor js = (JavascriptExecutor) ldriver;
-        js.executeScript("arguments[0].click();", listitem);
+        //JavascriptExecutor js = (JavascriptExecutor) ldriver;
+        //js.executeScript("arguments[0].click();", listitem);
+        safeClick(listitem);
     }
 
     public void setManagerOfVendor(String value) {

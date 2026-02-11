@@ -94,18 +94,30 @@ public class ProductListPageSteps extends BaseClass{
 
     }
 
-    @Then("Hover over first product and click Add to cart")
+    /*@Then("Hover over first product and click Add to cart")
     public void hover_over_first_product_and_click_add_to_cart() {
         productListAndPage.hoverAndClickFirstAddToCart();
+    }*/
+
+    @Then("Click Add to cart for first product")
+    public void click_add_to_cart_for_first_product() {
+        productListAndPage.clickFirstAddToCart();
     }
+
     @Then("Click Continue Shopping button")
     public void click_continue_shopping_button() {
         productListAndPage.clickContinueShopping();
     }
-    @Then("Hover over second product and click Add to cart")
+    /*@Then("Hover over second product and click Add to cart")
     public void hover_over_second_product_and_click_add_to_cart() {
         productListAndPage.hoverAndClickSecondAddToCart();
+    }*/
+
+    @Then("Click Add to cart for second product")
+    public void click_add_to_cart_for_second_product() {
+        productListAndPage.clickSecondAddToCart();
     }
+
     @Then("Click View Cart button")
     public void click_view_cart_button() {
         productListAndPage.clickViewCart();
@@ -131,5 +143,6 @@ public class ProductListPageSteps extends BaseClass{
         productListAndPage.clickBrandByName(brandName);
         handleAd();
     }
+
 
 }

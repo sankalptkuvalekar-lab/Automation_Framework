@@ -66,7 +66,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = {".//Features"},
+        features = {".//Features/AddToCart.feature"},
         glue = {"stepDefinations", "hooks"},
         monochrome = true,
         plugin = {

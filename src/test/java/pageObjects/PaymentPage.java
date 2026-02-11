@@ -7,10 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import stepDefinations.BaseClass;
 
 import java.time.Duration;
 
-public class PaymentPage {
+public class PaymentPage extends BaseClass {
 
     public WebDriver driver;
 
@@ -52,18 +53,51 @@ public class PaymentPage {
     @FindBy(xpath = "//a[@data-qa='continue-button']")
      WebElement btnContinue;
 
-    public void enterPaymentDetails(String name, String cardNum, String cvc, String month, String year) {
+    /*public void enterPaymentDetails(String name, String cardNum, String cvc, String month, String year) {
         txtNameOnCard.sendKeys(name);
         txtCardNumber.sendKeys(cardNum);
         txtCvc.sendKeys(cvc);
         txtExpiryMonth.sendKeys(month);
         txtExpiryYear.sendKeys(year);
+    }*/
+
+    public void enterPaymentDetails(String name, String cardNum, String cvc, String month, String year) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+        // 1️⃣ Wait for page to fully load (document.readyState = complete)
+        wait.until(driver -> ((JavascriptExecutor) driver)
+                .executeScript("return document.readyState")
+                .equals("complete"));
+
+        // 2️⃣ Wait for payment fields to be visible
+        wait.until(ExpectedConditions.visibilityOf(txtNameOnCard));
+        wait.until(ExpectedConditions.visibilityOf(txtCardNumber));
+        wait.until(ExpectedConditions.visibilityOf(txtCvc));
+        wait.until(ExpectedConditions.visibilityOf(txtExpiryMonth));
+        wait.until(ExpectedConditions.visibilityOf(txtExpiryYear));
+
+        // 3️⃣ Send keys safely
+        txtNameOnCard.clear();
+        txtNameOnCard.sendKeys(name);
+
+        txtCardNumber.clear();
+        txtCardNumber.sendKeys(cardNum);
+
+        txtCvc.clear();
+        txtCvc.sendKeys(cvc);
+
+        txtExpiryMonth.clear();
+        txtExpiryMonth.sendKeys(month);
+
+        txtExpiryYear.clear();
+        txtExpiryYear.sendKeys(year);
     }
 
     public void clickPayAndConfirm() {
         // Safe JavaScript click to bypass any ad overlays on the 'Pay' button
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", btnPayAndConfirm);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", btnPayAndConfirm);
+        safeClick(btnPayAndConfirm);
     }
 
     public boolean isSuccessMessageVisible() {

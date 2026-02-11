@@ -4,7 +4,7 @@ Feature: brand products
 
     Given User Launch Chrome Browser
     When User open the URL "https://automationexercise.com/"
-    Then Verify that home page is visible successfully
+    Then Verify home page is loaded
     Then Click on Products button
       Then Verify that Brands are visible on left side bar
     And Click on "Polo" brand name

@@ -4,7 +4,7 @@ Feature: Add product to cart
 
     Given User Launch Chrome Browser
     When User open the URL "https://automationexercise.com/"
-    Then Verify that home page is visible successfully
+    Then Verify home page is loaded
     Then Click on Products button
     Then Click on View Product of first product
     Then  User is landed to product detail page

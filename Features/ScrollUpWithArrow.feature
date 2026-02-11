@@ -5,7 +5,7 @@ Feature: Scrolling Functionality
 
     Given User Launch Chrome Browser
     When User open the URL "https://automationexercise.com/"
-    Then Verify that home page is visible successfully
+    Then Verify home page is loaded
     Then Scroll down to footer
     Then Verify text SUBSCRIPTION
     And Click on arrow at bottom right side to move upward

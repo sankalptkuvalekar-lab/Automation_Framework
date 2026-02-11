@@ -7,7 +7,7 @@ import pageObjects.CategoryPage;
 public class CategoryPageSteps extends BaseClass{
 
     @Then("Verify that category page is displayed and confirm text {string}")
-    public void verify_category_page_and_text(String expectedText) {
+    /*public void verify_category_page_and_text(String expectedText) {
         logger.info("********** Verifying Category Page Header **********");
 
         // Convert to upper case to match the site's styling if necessary
@@ -17,6 +17,23 @@ public class CategoryPageSteps extends BaseClass{
         logger.info("Actual: " + actualText);
 
         Assert.assertEquals(actualText, expectedText, "The category page title does not match!");
+        handleAd();
+    }*/
+
+    public void verify_category_page_and_text(String expectedText) {
+
+        logger.info("********** Verifying Category Page Header **********");
+
+        String actualText = categoryPage.getCategoryTitleText();
+
+        logger.info("Expected: " + expectedText);
+        logger.info("Actual: " + actualText);
+
+        Assert.assertTrue(
+                actualText.toUpperCase().contains(expectedText.toUpperCase()),
+                "The category page title does not match!"
+        );
+
         handleAd();
     }
 

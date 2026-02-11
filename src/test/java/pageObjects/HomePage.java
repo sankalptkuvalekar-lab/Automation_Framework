@@ -1,21 +1,19 @@
 package pageObjects;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import stepDefinations.BaseClass;
 
 import java.time.Duration;
 
 
 
-public class HomePage {
+public class HomePage extends BaseClass {
     public WebDriver driver;
 
     public HomePage(WebDriver rdriver) {
@@ -49,8 +47,10 @@ public class HomePage {
     @FindBy(xpath = "//h2[text()='recommended items']")
     WebElement headRecommendedItems;
 
-    @FindBy(xpath = "//div[@id='recommended-item-carousel']//a[@data-product-id='1' and contains(@class,'add-to-cart')]")
-     WebElement btnAddRecommendedProduct;
+    /*@FindBy(xpath = "//div[@id='recommended-item-carousel']//a[@data-product-id='1' and contains(@class,'add-to-cart')]")
+     WebElement btnAddRecommendedProduct;*/
+    private By activeRecommendedAddToCart =
+            By.xpath("//div[@id='recommended-item-carousel']//div[contains(@class,'item active')]//a[contains(@class,'add-to-cart')]");
 
 
 //category verifying'
@@ -158,8 +158,9 @@ public class HomePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnScrollUpArrow));
 
         // JS Click is used as this is an overlay element
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", btnScrollUpArrow);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", btnScrollUpArrow);
+        safeClick(btnScrollUpArrow);
     }
 
     public boolean isRecommendedItemsVisible() {
@@ -174,7 +175,7 @@ public class HomePage {
             return false;
         }
     }
-    public void clickAddRecommendedProduct() {
+    /*public void clickAddRecommendedProduct() {
         // Scroll to it first so the screenshot captures it if it fails
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", btnAddRecommendedProduct);
@@ -185,6 +186,32 @@ public class HomePage {
 
         // Using JS click to avoid 'ElementClickIntercepted' from the carousel overlay
         js.executeScript("arguments[0].click();", btnAddRecommendedProduct);
+    }*/
+
+    /*public void clickAddRecommendedProduct() {
+        safeClick(btnAddRecommendedProduct);
+    }*/
+
+    public void clickAddRecommendedProduct() {
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        // Scroll to Recommended Items section
+        WebElement recommendedSection =
+                driver.findElement(By.id("recommended-item-carousel"));
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView(true);", recommendedSection);
+
+        // Wait for visible ACTIVE Add to Cart button
+        WebElement addToCartBtn =
+                wait.until(ExpectedConditions.elementToBeClickable(activeRecommendedAddToCart));
+
+        // Use JS click to avoid overlays / animations
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].click();", addToCartBtn);
+
+        logger.info("Clicked Add to Cart on active Recommended product");
     }
 
     public boolean isCategorySidebarVisible() {
@@ -197,7 +224,7 @@ public class HomePage {
         }
     }
 
-    public void clickWomenCategory() {
+    /*public void clickWomenCategory() {
         // Ensure the element is visible and in view
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", lnkWomenCategory);
@@ -207,6 +234,10 @@ public class HomePage {
 
         // Use JS click to bypass potential "skyscraper" ads on the sidebar
         js.executeScript("arguments[0].click();", lnkWomenCategory);
+    }*/
+
+    public void clickWomenCategory() {
+        safeClick(lnkWomenCategory);
     }
 
     public void clickWomenDressSubCategory() {
@@ -215,8 +246,9 @@ public class HomePage {
         wait.until(ExpectedConditions.visibilityOf(lnkWomenDress));
 
         // Use JS click to bypass potential sidebar ads and ensure navigation
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", lnkWomenDress);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", lnkWomenDress);
+        safeClick(lnkWomenDress);
     }
 
     public void clickMenCategory() {
@@ -224,8 +256,9 @@ public class HomePage {
         wait.until(ExpectedConditions.elementToBeClickable(lnkMenCategory));
 
         // Use JS Click to avoid sidebar ad interference
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", lnkMenCategory);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", lnkMenCategory);
+        safeClick(lnkMenCategory);
     }
 
     public void clickMenTshirtsSubCategory() {
@@ -233,8 +266,9 @@ public class HomePage {
         // Wait for the 'Men' section to expand so the sub-link is visible
         wait.until(ExpectedConditions.visibilityOf(lnkMenTshirts));
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", lnkMenTshirts);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", lnkMenTshirts);
+        safeClick(lnkMenTshirts);
     }
 
 

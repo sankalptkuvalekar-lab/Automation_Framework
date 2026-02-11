@@ -3,7 +3,7 @@ Feature: User Login
   Scenario: Logout User
     Given User Launch Chrome Browser
     When User open the URL "https://automationexercise.com/"
-    Then Verify that home page is visible successfully
+    Then Verify home page is loaded
     And User Click on the Login link
     Then Verify Login to your account is visible
     And User enter his Email and password

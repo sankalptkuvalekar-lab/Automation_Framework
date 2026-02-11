@@ -12,7 +12,7 @@ public class NewUserLoginPageSteps extends BaseClass{
     }
     @When("User enter his Email and password")
     public void user_enter_his_email_and_password() {
-        newuserLoginPage.emailEnter("user66@gmail.com");
+        newuserLoginPage.emailEnter("user84@gmail.com");
         newuserLoginPage.passwordEnter("user@123");
     }
     @When("User Click on Login button")
@@ -30,32 +30,53 @@ public class NewUserLoginPageSteps extends BaseClass{
     //logout button
     @When("click on Logout button")
     public void click_on_logout_button() {
-        newuserLoginPage.clickLpogputLink();
+        newuserLoginPage.clickLogoutLink();
     }
 
-    @Then("Verify that home page is visible successfully")
+    /*@Then("Verify that home page is visible successfully")
     public void verify_that_home_page_is_visible_successfully() {
         System.out.println("Verify that the Home Page Header is Visible");
         newuserLoginPage = new NewUserLoginPage(driver);
-        newuserLoginPage.verifyHomePage();
+        newuserLoginPage.verifyHomePageAfterLogin();
 
+    }*/
+
+    @Then("Verify home page is loaded")
+    public void verify_home_page_is_loaded() {
+        newuserLoginPage.verifyHomePageLoaded();
     }
+
+    @Then("Verify user is logged in successfully")
+    public void verify_user_is_logged_in_successfully() {
+        newuserLoginPage.verifyHomePageAfterLogin();
+    }
+
     @Then("Verify Login to your account is visible")
     public void verify_is_visible() {
         newuserLoginPage = new NewUserLoginPage(driver);
-        newuserLoginPage.verifyloginPage();
+        newuserLoginPage.verifyLoginPage();
     }
-    @Then("Verify that Logged in as username is visible")
+    /*@Then("Verify that Logged in as username is visible")
     public void verify_that_is_visible() {
         newuserLoginPage = new NewUserLoginPage(driver);
         newuserLoginPage.verifyHomePageAfterLogin();
 
+    }*/
+
+    @Then("Verify that Logged in as username is visible")
+    public void verify_that_is_visible() {
+
+        newuserLoginPage = new NewUserLoginPage(driver);
+
+        // ✅ Split verification
+        newuserLoginPage.verifyUserLoggedIn();
+        newuserLoginPage.verifyLogoutLinkVisible();
     }
 
     @Then("Verify error Your email or password is incorrect! is visible")
     public void verify_error_message(){
         newuserLoginPage = new NewUserLoginPage(driver);
-        newuserLoginPage.verifyHErrorMeeageofInvalidCredentials();
+        newuserLoginPage.verifyErrorMessageForInvalidCredentials();
 
     }
 
@@ -63,6 +84,6 @@ public class NewUserLoginPageSteps extends BaseClass{
     public void verify_that_the_user_is_navigated_to_the_login_page() {
 
         newuserLoginPage = new NewUserLoginPage(driver);
-        newuserLoginPage.verifyTheLoginButtonIsVisible();
+        newuserLoginPage.verifySignupLoginLinkVisible();
     }
 }

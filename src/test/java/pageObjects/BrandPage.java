@@ -7,11 +7,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import stepDefinations.BaseClass;
 
 import java.time.Duration;
 import java.util.List;
 
-public class BrandPage {
+public class BrandPage extends BaseClass {
 
     public WebDriver driver;
 
@@ -59,7 +60,7 @@ public class BrandPage {
         return driver.getCurrentUrl();
     }
 
-    public void clickAnyOtherBrand() {
+    /*public void clickAnyOtherBrand() {
         String currentUrl = driver.getCurrentUrl();
 
         // Find a brand link that isn't the one we are currently viewing
@@ -76,7 +77,22 @@ public class BrandPage {
                 break; // Exit after clicking the first "other" brand found
             }
         }
+    }*/
+
+    public void clickAnyOtherBrand() {
+        String currentUrl = driver.getCurrentUrl();
+
+        for (WebElement brand : allBrandLinks) {
+            String brandHref = brand.getAttribute("href");
+
+            // Skip the currently selected brand
+            if (!currentUrl.contains(brandHref)) {
+                safeClick(brand);
+                break;
+            }
+        }
     }
+
     public String getBrandHeaderText1() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         // Wait for the header to be visible (handles page transition)

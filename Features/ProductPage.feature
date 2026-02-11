@@ -4,7 +4,7 @@ Feature: product list and Product page
 
     Given User Launch Chrome Browser
     When User open the URL "https://automationexercise.com/"
-    Then Verify that home page is visible successfully
+    Then Verify home page is loaded
     Then Click on Products button
     #Then Verify user is navigated to ALL PRODUCTS page successfully
     Then Click on View Product of first product

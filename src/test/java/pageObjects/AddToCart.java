@@ -9,12 +9,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import stepDefinations.BaseClass;
 
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddToCart {
+public class AddToCart extends BaseClass {
     public WebDriver driver;
 
     public AddToCart(WebDriver rdriver) {
@@ -70,6 +71,24 @@ public class AddToCart {
     public void clickAddToCart() {
         addToCartBtn.click();
     }
+    /*public void clickAddToCart() {
+
+        if (isMobileExecution()) {
+            removeGoogleAdsIfPresent();
+        }
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript(
+                "arguments[0].scrollIntoView({block:'center'});",
+                addToCartBtn
+        );
+
+        js.executeScript("arguments[0].click();", addToCartBtn);
+
+        logger.info("Clicked Add To Cart button");
+    }*/
+
 
 
     public void clickViewCart() {
@@ -80,9 +99,26 @@ public class AddToCart {
         // Click the link
         viewCartLink.click();
 
-
-
     }
+
+    /*public void clickViewCartFromPopup() {
+
+        if (isMobileExecution()) {
+            removeGoogleAdsIfPresent();
+        }
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript(
+                "arguments[0].scrollIntoView({block:'center'});",
+                viewCartLink
+        );
+
+        js.executeScript("arguments[0].click();", viewCartLink);
+
+        logger.info("Clicked View Cart from popup");
+    }*/
+
     public String getFirstProductPrice() {
         return firstProductPrice.getText();
     }
@@ -123,21 +159,25 @@ public class AddToCart {
     //checkput
     public void clickProceedToCheckout() {
         // JavaScript click to bypass any potential ad overlays/iframes
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", btnProceedToCheckout);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", btnProceedToCheckout);
+        safeClick(btnProceedToCheckout);
     }
 
     public void clickRegisterLogin() {
         // JS Click bypasses the "Element Click Intercepted" errors from ads
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", btnRegisterLogin);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", btnRegisterLogin);
+        safeClick(btnRegisterLogin);
     }
 
 
     public void clickCartButton() {
         // JS Click handles situations where a Google Ad might be overlaying the header
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", btnCart);
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", btnCart);
+        safeClick(btnCart);
+
     }
 
 

@@ -1,6 +1,8 @@
 package hooks;
 
 
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import stepDefinations.BaseClass;
 
@@ -15,6 +17,8 @@ import utilities.ScreenshotUtil;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 public class Hooks extends BaseClass {
@@ -28,7 +32,49 @@ public class Hooks extends BaseClass {
         // 2️⃣ Setup ChromeDriver
         String browser = configProp.getProperty("browser").toLowerCase();
 
-        switch (browser) {
+        if (browser.equals("chrome")) {
+
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+
+            if (isMobileExecution()) {
+
+                String deviceName = configProp.getProperty("deviceName");
+
+                Map<String, Object> deviceMetrics = new HashMap<>();
+                deviceMetrics.put("width",
+                        Integer.parseInt(configProp.getProperty(deviceName + ".width")));
+                deviceMetrics.put("height",
+                        Integer.parseInt(configProp.getProperty(deviceName + ".height")));
+                deviceMetrics.put("pixelRatio", 3.0);
+
+                Map<String, Object> mobileEmulation = new HashMap<>();
+                mobileEmulation.put("deviceMetrics", deviceMetrics);
+                mobileEmulation.put("userAgent",
+                        "Mozilla/5.0 (Linux; Android 11)");
+
+                options.setExperimentalOption("mobileEmulation", mobileEmulation);
+
+                logger.info("Running in MOBILE EMULATION mode: " + deviceName);
+            } else {
+                logger.info("Running in DESKTOP WEB mode");
+            }
+
+            driver = new ChromeDriver(options);
+
+        } else if (browser.equals("edge")) {
+
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
+
+        } else {
+            throw new RuntimeException("Invalid browser in Config.properties");
+        }
+
+        if (!isMobileExecution()) {
+            driver.manage().window().maximize();
+        }
+        /*switch (browser) {
 
             case "chrome":
                 WebDriverManager.chromedriver().setup();
@@ -44,11 +90,63 @@ public class Hooks extends BaseClass {
                 throw new RuntimeException(
                         "Invalid browser in Config.properties: " + browser
                 );
+        }*/
+
+        /*if (isMobileExecution()) {
+
+            String deviceName = configProp.getProperty("deviceName");
+
+            int width = Integer.parseInt(
+                    configProp.getProperty(deviceName + ".width")
+            );
+
+            int height = Integer.parseInt(
+                    configProp.getProperty(deviceName + ".height")
+            );
+
+            driver.manage().window().setSize(new Dimension(width, height));
+
+            logger.info("Executing tests in MOBILE WEB mode on device: "
+                    + deviceName + " (" + width + "x" + height + ")");
+
+        } else {
+            driver.manage().window().maximize();
+            logger.info("Executing tests in DESKTOP WEB mode");
+        }*/
+
+        /*ChromeOptions options = new ChromeOptions();
+
+        if (isMobileExecution()) {
+
+            String deviceName = configProp.getProperty("deviceName");
+
+            Map<String, Object> deviceMetrics = new HashMap<>();
+            deviceMetrics.put("width",
+                    Integer.parseInt(configProp.getProperty(deviceName + ".width")));
+            deviceMetrics.put("height",
+                    Integer.parseInt(configProp.getProperty(deviceName + ".height")));
+            deviceMetrics.put("pixelRatio", 3.0);
+
+            Map<String, Object> mobileEmulation = new HashMap<>();
+            mobileEmulation.put("deviceMetrics", deviceMetrics);
+            mobileEmulation.put("userAgent",
+                    "Mozilla/5.0 (Linux; Android 11)");
+
+            options.setExperimentalOption("mobileEmulation", mobileEmulation);
+
+            logger.info("Running in MOBILE EMULATION mode: " + deviceName);
         }
-        driver.manage().window().maximize();
+
+        driver = new ChromeDriver(options);
+
+        if (!isMobileExecution()) {
+            driver.manage().window().maximize();
+            logger.info("Executing tests in DESKTOP WEB mode");
+        }*/
 
 
-            // 2️⃣ Initialize ALL page objects
+
+        // 2️⃣ Initialize ALL page objects
             lp = new LoginPage(driver);
             addCust = new AddCustomerPage(driver);
             searchCust = new SearchCustomerPage(driver);

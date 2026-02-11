@@ -3,7 +3,7 @@ Feature: Registration
 
     Given User Launch Chrome Browser
     When User open the URL "https://automationexercise.com/"
-    Then Verify that home page is visible successfully
+    Then Verify home page is loaded
     And User Click on the Login link
     And Verify New User Signup is visible
     And Enter name and email address

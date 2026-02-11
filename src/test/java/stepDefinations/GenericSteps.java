@@ -14,15 +14,16 @@ public class GenericSteps extends BaseClass{
     public void user_open_url(String url) {
         logger.info("********** Opening URL **********");
         driver.get(url);
-
-        driver.manage().window().maximize();
+        handleAd(); // this can refresh
+        //handleAdIfPresentMobileSafe();
+        //driver.manage().window().maximize();
     }
 
     @Then("Close Browser")
     public void close_browser() {
 
         logger.info("********** Closing Browse r**********");
-        driver.quit();
+        //driver.quit();
     }
 
 }
